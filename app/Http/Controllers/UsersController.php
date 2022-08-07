@@ -32,7 +32,7 @@ class UsersController extends Controller
     public function update(Request $request, User $user)
     {
         $data = $request->validate([
-            'name' => 'required',
+            'name' => 'required|regex:/^[a-z ]+$/i',
             'email' => ['required' , 'email'],
             'phonenumber' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
             'city_id' => '',

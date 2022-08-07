@@ -20,7 +20,7 @@
 
 <div class="container" style="padding:8%;margin-top:100px">
     <form action="{{ route('pages.updateProfile', $user->id)}}" method="POST" enctype="multipart/form-data">
-        {{-- @method('PUT') --}}
+        @method('PUT')
         @csrf
     <div class="form-group ">
       <label for="exampleFormControlInput1">Charitie Name:</label>

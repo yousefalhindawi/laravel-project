@@ -164,7 +164,7 @@ class PackageController extends Controller
         return redirect()->route('packages.index')
         ->with('message', 'All packages have been approved successfully');
     }
-    
+
     public function softDelete(Package $package)
     {
         //
@@ -173,3 +173,7 @@ class PackageController extends Controller
         // return redirect()->route('home.index')->withSuccess(__('Package Booked successfully.'));
     }
 }
+
+
+
+
